@@ -14,6 +14,10 @@
 		FBF5CD2D2B21555900CACFD7 /* workshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF5CD2C2B21555900CACFD7 /* workshopTests.swift */; };
 		FBF5CD372B21555900CACFD7 /* workshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF5CD362B21555900CACFD7 /* workshopUITests.swift */; };
 		FBF5CD392B21555900CACFD7 /* workshopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF5CD382B21555900CACFD7 /* workshopUITestsLaunchTests.swift */; };
+		FBF5CD462B21881400CACFD7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF5CD452B21881400CACFD7 /* ImagePicker.swift */; };
+		FBF5CD482B218ED700CACFD7 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FBF5CD472B218ED700CACFD7 /* MobileNetV2.mlmodel */; };
+		FBF5CD4A2B218EEE00CACFD7 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF5CD492B218EEE00CACFD7 /* Classifier.swift */; };
+		FBF5CD4C2B21A61F00CACFD7 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF5CD4B2B21A61F00CACFD7 /* ImageClassifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		FBF5CD322B21555900CACFD7 /* workshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = workshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF5CD362B21555900CACFD7 /* workshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workshopUITests.swift; sourceTree = "<group>"; };
 		FBF5CD382B21555900CACFD7 /* workshopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workshopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBF5CD452B21881400CACFD7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FBF5CD472B218ED700CACFD7 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		FBF5CD492B218EEE00CACFD7 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		FBF5CD4B2B21A61F00CACFD7 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,10 @@
 				FBF5CD1D2B21555600CACFD7 /* ContentView.swift */,
 				FBF5CD1F2B21555800CACFD7 /* Assets.xcassets */,
 				FBF5CD212B21555800CACFD7 /* Preview Content */,
+				FBF5CD452B21881400CACFD7 /* ImagePicker.swift */,
+				FBF5CD472B218ED700CACFD7 /* MobileNetV2.mlmodel */,
+				FBF5CD492B218EEE00CACFD7 /* Classifier.swift */,
+				FBF5CD4B2B21A61F00CACFD7 /* ImageClassifier.swift */,
 			);
 			path = workshop;
 			sourceTree = "<group>";
@@ -257,7 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBF5CD4A2B218EEE00CACFD7 /* Classifier.swift in Sources */,
 				FBF5CD1E2B21555600CACFD7 /* ContentView.swift in Sources */,
+				FBF5CD462B21881400CACFD7 /* ImagePicker.swift in Sources */,
+				FBF5CD482B218ED700CACFD7 /* MobileNetV2.mlmodel in Sources */,
+				FBF5CD4C2B21A61F00CACFD7 /* ImageClassifier.swift in Sources */,
 				FBF5CD1C2B21555600CACFD7 /* workshopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -425,6 +441,7 @@
 				DEVELOPMENT_TEAM = 23D44T2LM8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Se requiere uso de la cámara";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +471,7 @@
 				DEVELOPMENT_TEAM = 23D44T2LM8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Se requiere uso de la cámara";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
